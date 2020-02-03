@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "develop": "parcel src/index.html",
+    "lint": "tslint --project .",
+    "lint:fix": "tslint --project . --fix",
+    "build": "tslint --project . && rimraf dist && parcel build src/index.html --no-source-maps --no-minify --no-cache --public-url ."
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.1",
+    "tslint": "^6.0.0",
+    "tslint-config-standard": "^9.0.0",
+    "typescript": "^3.7.5"
+  }
+}
